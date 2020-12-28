@@ -12,10 +12,11 @@ if [ ${DOCKER_PS_CONTAINER_CNT} = '1' ]; then
 fi;
 
 echo 'nginx container create'
-docker run -dt -p 80:80 --name ${CONTAINER_NAME} \
+docker run -dt -p 80:80 -p 443:443 --name ${CONTAINER_NAME} \
 -v ${NGINX_CONFIG}:/etc/nginx/nginx.conf:ro \
 -v ${NGINX_CONFIG_CONFD}:/etc/nginx/conf.d:ro \
 -v /var/cache/jenkins/war:/var/cache/jenkins/war:ro \
 -v /var/lib/jenkins/:/var/lib/jenkins/:ro \
+-v /etc/letsencrypt:/etc/letsencrypt:ro \
 nginx:alpine
 
