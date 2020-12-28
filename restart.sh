@@ -15,6 +15,7 @@ echo 'nginx container create'
 docker run -dt -p 80:80 -p 443:443 --name ${CONTAINER_NAME} \
 -v ${NGINX_CONFIG}:/etc/nginx/nginx.conf:ro \
 -v ${NGINX_CONFIG_CONFD}:/etc/nginx/conf.d:ro \
+-v /var/log/nginx/:/var/log/nginx/ \
 -v /var/cache/jenkins/war:/var/cache/jenkins/war:ro \
 -v /var/lib/jenkins/:/var/lib/jenkins/:ro \
 -v /etc/letsencrypt:/etc/letsencrypt:ro \
