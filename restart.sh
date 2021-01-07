@@ -22,5 +22,6 @@ docker run -dt -p 80:80 -p 443:443 --name ${CONTAINER_NAME} \
 -v /var/cache/jenkins/war:/var/cache/jenkins/war:ro \
 -v /var/lib/jenkins/:/var/lib/jenkins/:ro \
 -v /etc/letsencrypt:/etc/letsencrypt:ro \
+-e TZ='Asia/Seoul' \
 nginx:alpine
 
