@@ -1,1 +1,2 @@
 nginx_config/.htpasswd
+nginx_config/dhparam.pem
