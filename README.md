@@ -1,11 +1,12 @@
 # 리버스 프록시 nginx 템플릿
 
 ## 구성되어있는 설정
-* 8080 code-server 연결
+* 8080 샘플
 * 8081 jenkins (호스트 젠킨스 기준 설정, 없을 경우 restart.sh에서 관련 볼륨 마운트 해제 필요)
 * 8082 nextcloud (by docker)
 * 8083 webdav 서버 (by docker)
 * 8084 transmission 서버 (by docker)
+* 8085 code-server 연결
 * 게이트웨이(ip지정) 공유기 관리자 페이지 연결
 
 
