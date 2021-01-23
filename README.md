@@ -7,6 +7,7 @@
 * 8083 webdav 서버 (by docker)
 * 8084 transmission 서버 (by docker)
 * 8085 code-server 연결
+* 8086 netdata 모니터링 연결
 * 게이트웨이(ip지정) 공유기 관리자 페이지 연결
 
 
